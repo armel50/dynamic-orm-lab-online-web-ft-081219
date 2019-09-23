@@ -45,7 +45,7 @@ class InteractiveRecord
  end
  
  def self.find_by(attribute) 
-  p attribute.keys
+  p attribute.keys.first.to_s
  end
 
 end
