@@ -48,7 +48,7 @@ class InteractiveRecord
    key = attribute.keys.first.to_s 
    val = attribute.values.first
    p val
-  DB[:conn].execute("SELECT * FROM #{self.table_name} WHERE #{key} = ?", attribute)
+  DB[:conn].execute("SELECT * FROM #{self.table_name} WHERE #{key} = ?", val)
  end
 
 end
